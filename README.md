@@ -54,6 +54,7 @@ The functionality that will be implemented consists of the following modules:
 
 
 ## Diagraming
+
 ### DFDs
 ![image](https://user-images.githubusercontent.com/45181428/192973825-3ea26c7b-82ff-410a-8a09-d1960d007d10.png)
 ![image](https://user-images.githubusercontent.com/45181428/192973881-e319a00d-0b10-4a23-82fe-8cd770d88f4e.png)
