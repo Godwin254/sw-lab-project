@@ -18,7 +18,7 @@ The following system is a fully web-based application with the ability to work o
 
 In order to achieve the full functionality of the above-described application, the project will implement the following modules. A fully responsive frontend, a serviced backend, and a NoSQL database for storing data.
 
-The functionality that will be implemented consists of the following modules:
+The functionality that will be implemented consists of the following main modules:
 
 *Users module*
 
