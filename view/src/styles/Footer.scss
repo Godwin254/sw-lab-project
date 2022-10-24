@@ -1,0 +1,34 @@
+.Footer{
+    position: relative;
+    background-color: #272626;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__left{
+        a{
+            color: #dadada;
+            margin-right: 4rem;
+            text-decoration: none;
+        }
+    }
+
+    &__center{
+        h2{
+            font-size: 2rem;
+            color: #A6CE06;
+            span{
+                font-size: 1rem;
+                color: #fff;
+            }
+        }
+    }
+
+     &__right{
+        a{
+            color: #dadada;
+            margin-left: 4rem;
+            text-decoration: none;
+        }
+    }
+}
