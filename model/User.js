@@ -21,11 +21,13 @@ const UserSchema = new Schema({
     },
     createdAt:{
         type: Date,
-        default: () => Date.now().toLocaleString(),
+        default: () => new Date().toString(),
         immutable: true
     },
     updatedAt:{
         type: Date,
-        default: () => Date.now().toLocaleString()
+        default: () => new Date().toString()
     }
 });
+
+module.exports = User = mongoose.model('user', UserSchema);

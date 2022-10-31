@@ -25,7 +25,7 @@ const getOneUser = async (userId) => {
 const createUser = async (newUser) => {
     try{
         const user = await User.create(newUser);
-        await user.save();
+        user.save();
         return user;
     }catch(err){
         console.log(err);

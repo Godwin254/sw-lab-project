@@ -1,4 +1,5 @@
-const userServices = require('../services/userServices');
+const userServices = require('../services/userService');
+
 
 const getAllUsers = async (req, res) => {
     try {
@@ -45,7 +46,7 @@ const deleteUser = async (req, res) => {
     try {
         const {userId} = req.params;
         const user = await userServices.deleteUser(userId);
-        res.status(200).json(user);
+        res.status(200).json({ message: 'deleted successfully' });
     }catch (err) {
         res.status(500).json({ message: err.message });
     }

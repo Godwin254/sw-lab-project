@@ -24,7 +24,7 @@ describe('GET /api/users', () => {
     });
 });
 
-describe('GET /api/users/:id', () => {
+describe('GET /api/users/:userId', () => {
     it('should return 200 OK', () => {
         return request(app).get('/api/users/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });
@@ -36,13 +36,13 @@ describe('POST /api/users', () => {
     });
 });
 
-describe('PATCH /api/users/:id', () => {
+describe('PATCH /api/users/:userId', () => {
     it('should return 200 OK', () => {
         return request(app).patch('/api/users/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });
 });
 
-describe('DELETE /api/users/:id', () => {
+describe('DELETE /api/users/:userId', () => {
     it('should return 200 OK', () => {
         return request(app).delete('/api/users/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });
