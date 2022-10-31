@@ -1,7 +1,8 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
+import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
+import Button from '../components/Button'
 
 function Home() {
   const home1 = require('../images/Rectangle 17.png');
@@ -33,6 +34,7 @@ function Home() {
           One of the most important functions of visual hierarchy is to establish a focal point;
           this shows visitors where the most important information is.
         </p>
+        <Button label='Learn more' />
       </section>
 
       <section className='section__features'>
