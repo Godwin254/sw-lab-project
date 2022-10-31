@@ -23,7 +23,7 @@ describe('GET /api/posts', () => {
     });
 });
 
-describe('GET /api/posts/:id', () => {
+describe('GET /api/posts/:postId', () => {
     it('should return 200 OK', () => {
         return request(app).get('/api/posts/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });
@@ -35,13 +35,13 @@ describe('POST /api/posts', () => {
     });
 });
 
-describe('PATCH /api/posts/:id', () => {
+describe('PATCH /api/posts/:postId', () => {
     it('should return 200 OK', () => {
         return request(app).patch('/api/posts/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });
 });
 
-describe('DELETE /api/posts/:id', () => {
+describe('DELETE /api/posts/:postId', () => {
     it('should return 200 OK', () => {
         return request(app).delete('/api/posts/5f4a1f7d8e3f1a3a3c3e3e3e').expect(200);
     });

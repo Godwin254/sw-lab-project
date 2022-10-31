@@ -7,9 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:client": "cd view && npm run test -a --watchAll",
+    "test:server": "cross-env NODE_ENV=test jest --testTimeout 10000",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "heroku-postbuild": "cd view && npm install && npm run build",
+    "test-build": "cd view && npm install && npm run build"
   },
   "repository": {
     "type": "git",

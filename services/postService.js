@@ -24,7 +24,7 @@ const getOnePost = async (postId) => {
 const createPost = async (newPost) => {
     try{
         const post = await Post.create(newPost);
-        await post.save();
+        post.save();
         return post;
     }catch(err){
         console.log(err);

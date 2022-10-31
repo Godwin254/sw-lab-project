@@ -4,16 +4,16 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const path = require('path');
 
-const postRouter = require('../routes/postRouter');
-const userRouter = require('../routes/userRouter');
+const postRouter = require('./routes/postRouter');
+const userRouter = require('./routes/userRouter');
 
 //middlewares
 app.use(bodyParser.json());
 app.use(cors());
 
 //routes
-app.use('api/posts', postRouter);
-app.use('api/users', userRouter);
+app.use('/api/posts', postRouter);
+app.use('/api/users', userRouter);
 
 //api
 app.get('/api', (req, res) => {
