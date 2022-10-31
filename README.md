@@ -45,7 +45,18 @@ The functionality that will be implemented consists of the following modules:
 -   Registered users joining forum discussions.
     
 -   Admin approving requests to join forums.
-    
+
+### Tools
+1. Reactjs
+2. Nodejs
+3. Mongodb
+4. Expressjs
+5. Git & Github
+6. Github actions
+
+
+### Environment
+Ubuntu 22.04
 
   
 
