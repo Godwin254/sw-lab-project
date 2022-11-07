@@ -1,10 +1,10 @@
-# Bonga KE   SCCI/01165/2018
+# Bonga KE   - SCCI/01165/2018
 
 ## Overview
 
 **1.  Project Background and description**
 
-```Bonga Kenya``` is a web application that is aimed to connect the youths by providing a platform for sharing their thoughts and ideas in form of posts and blogs and also providing a forum-based section for engaging on r. The platform intends to allow individuals to read other people’s posts, thoughts, and opinions together with their creative articles, providing the ability to post and read, comment.
+```Bonga Kenya``` is a web app that connects individuals,provides a platform for sharing blog posts and provides a forum-based page for actively sharing thoughts.
 
   
 
