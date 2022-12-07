@@ -67,12 +67,10 @@ Ubuntu 22.04
 ## Diagraming
 
 ### DFDs
-![image](https://user-images.githubusercontent.com/45181428/192973825-3ea26c7b-82ff-410a-8a09-d1960d007d10.png)
-![image](https://user-images.githubusercontent.com/45181428/192973881-e319a00d-0b10-4a23-82fe-8cd770d88f4e.png)
-![image](https://user-images.githubusercontent.com/45181428/192973963-d42ff896-56b4-4121-8aac-e2964ebd9cb7.png)
-![image](https://user-images.githubusercontent.com/45181428/192974037-0a3e46e4-02be-49fc-9c8d-ca52fd922833.png)
-![image](https://user-images.githubusercontent.com/45181428/192974137-5ba4669b-9347-4658-bd18-8b5532c0b1a5.png)
+![sw-lab-2022-UML drawio](https://user-images.githubusercontent.com/45181428/206160233-98b8fa20-cfbe-415b-bbc0-13e8311191a4.png)
 
+### Flow chart
+![sw-dev-lab-flow chart drawio](https://user-images.githubusercontent.com/45181428/206159370-082c6197-e49b-42db-8194-789b1c89eeae.png)
 
 ### Site map
 ![image](https://user-images.githubusercontent.com/45181428/192973524-8253ea5a-4782-49f3-8f0b-8d6fdbbf9dc1.png)
