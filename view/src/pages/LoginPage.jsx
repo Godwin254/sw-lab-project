@@ -6,7 +6,6 @@ import background from  '../assets/images/background.jpg'
 
 function LoginPage() {
 
-
   return (
     <div className="LoginPage">
           <img src={background} alt="background" className="background" />
