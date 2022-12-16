@@ -27,7 +27,7 @@ function LoginPage() {
                               <label htmlFor="password">Password</label>
                               <input type="password" name="password" id="password" placeholder="qw12@!QWE" />
                          </div>
-                         <div className="form-group">
+                         <div className="form-group checkbox">
                               <input type="checkbox" name="remember" id="remember" />
                               <label htmlFor="remember">Remember me</label>
                          </div>
