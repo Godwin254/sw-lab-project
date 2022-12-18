@@ -11,6 +11,12 @@
     display: flex;
     align-items: center;
 
+    img{
+        width: 15rem;
+        height: 15vh;
+        object-fit: contain;
+    }
+
     nav{
         height: inherit;
         flex: 0 0 1;
@@ -105,7 +111,7 @@
         border: 1px solid #ccc;
         background: none;
         width: 150px;
-        height: 45px;
+        height: 40px;
         border-radius: 3rem;
 
         font-size: 1rem;

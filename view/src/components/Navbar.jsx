@@ -1,5 +1,6 @@
 import React from 'react'
-import Button from './Button'
+import Button from './Button';
+import Logo from '../assets/images/logo.png'
 
 function Navbar() {
 
@@ -9,7 +10,7 @@ function Navbar() {
 
   return (
     <div className='Navbar'>
-        <h1>MindGaurd</h1>
+        <img src={Logo} alt='logo' />
         <nav>
             <a href='#'>Home</a>
             <a href='#'>Explore</a>
