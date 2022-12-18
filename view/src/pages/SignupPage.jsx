@@ -43,7 +43,14 @@ function SignupPage() {
             </form>
             <div className="forgot-password">
               <p>Don't have an account? <a href="#">Sign up</a></p>
-             </div>
+            </div>
+            <div className="social">
+              <span>Sign in with: </span>
+            
+              <BsFacebook className="icon"/>
+              <AiFillGoogleCircle className="icon"/>
+                                   
+            </div>
 
           </div>
             
