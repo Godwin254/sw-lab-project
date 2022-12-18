@@ -1,0 +1,29 @@
+ footer{
+     position: relative;
+     width: 100vw;
+     background: rgb(242, 242, 242);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0 10rem;
+
+     img{
+          width: 15rem;
+          height: 15vh;
+          object-fit: contain;
+     }
+
+     .left-view, .right-view{
+          a{
+               text-decoration: none;
+               color: rgb(59, 52, 52);
+               padding: 0.5rem 1rem;
+               transition: all .4s ease-in-out;
+               &:hover{
+                    color: rgb(59, 52, 52);
+                    text-decoration: underline;
+                    transition: all .4s ease-in-out;
+               }
+          }
+     }
+ }

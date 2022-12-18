@@ -4,6 +4,7 @@ import './App.scss';
 import LoginPage from './pages/LoginPage';
 import SignupPage from './pages/SignupPage';
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -12,9 +13,10 @@ function App() {
       {/**
        *  <LoginPage />
        * <SignupPage />
+       *  <Navbar />
        */}
 
-       <Navbar />
+       <Footer />
     </div>
   )
 }

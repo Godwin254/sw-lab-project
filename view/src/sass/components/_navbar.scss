@@ -11,12 +11,80 @@
     display: flex;
     align-items: center;
 
+    img{
+        width: 15rem;
+        height: 15vh;
+        object-fit: contain;
+    }
+
     nav{
         height: inherit;
         flex: 0 0 1;
         margin: 0 auto;
         display: flex;
         justify-content: center;
+
+        .explore-dropdown{
+            position: absolute;
+            top: 10vh;
+            left: 45%;
+            background-color: #fff;
+            display: none;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            transition: all .4s ease-in-out;
+            z-index: 10;
+            box-shadow: 1px 0 10px rgba(0, 0, 0, 0.082);
+            &:hover{
+                display: flex;
+                transition: all .4s ease-in-out;
+            }
+            a{
+                width: 100%;
+                height: 6vh;
+                text-align: left;
+                font-weight: 200;
+            }
+        }
+        .lib-dropdown{
+            left: 0;
+            display: none;
+            position: absolute;
+            top: 10vh;
+            left: 45%;
+            background-color: #fff;
+            padding: 1rem;
+
+            transition: all .4s ease-in-out;
+            z-index: 10;
+            box-shadow: 1px 0 10px rgba(0, 0, 0, 0.082);
+
+            .dropdown-category{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding: 1rem;
+                margin-right: 1rem;
+                h3{
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                }
+                a{
+                    padding: 0;
+                    font-weight: 400;
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    height: 5vh;
+                    &:hover{
+                        background: none;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
 
         a{
             text-decoration: none;
@@ -29,19 +97,21 @@
             align-items: center;
             transition: all .4s ease-in-out;
             font-weight: 800;
-
             &:hover{
-                background-color: rgb(53, 252, 70);
+                background-color: rgb(6, 4, 28);
+                color: rgb(222, 222, 222);
                 transition: all .4s ease-in-out;
             }
+           
         }
+       
     }
 
     button{
         border: 1px solid #ccc;
         background: none;
-        width: 200px;
-        height: 50px;
+        width: 150px;
+        height: 40px;
         border-radius: 3rem;
 
         font-size: 1rem;
@@ -50,7 +120,7 @@
         transition: all .4s ease-in-out;
 
         &:hover{
-            border: 2px solid rgb(206, 206, 206);
+            border: 3px solid rgb(3, 9, 33);
             box-shadow: 1p 0 10px rgba(0, 0, 0, 0.397);
             transition: all .4s ease-in-out;
         }
@@ -58,4 +128,19 @@
 
     }
 
+}
+
+// mobile view
+@media screen and (max-width: 768px){
+    .Navbar{
+        padding: 0 2rem;
+        nav{
+            .explore-dropdown{
+                left: 0;
+            }
+            .lib-dropdown{
+                left: 0;
+            }
+        }
+    }
 }
