@@ -34,13 +34,16 @@ function SignupPage() {
                 <input type="password" name="password" id="password" placeholder="qw12@!QWE" />
               </div>
               <div className="form-group">
-                <input type="checkbox" name="remember" id="remember" />
-                <label htmlFor="remember">Remember me</label>
+                <label htmlFor="password">Confirm password</label>
+                <input type="password" name="password" id="password" placeholder="qw12@!QWE" />
               </div>
               <div className="form-group">
-                <button type="submit">Login</button>
+                <button type="submit">Register</button>
               </div>
             </form>
+            <div className="forgot-password">
+              <p>Don't have an account? <a href="#">Sign up</a></p>
+             </div>
 
           </div>
             
