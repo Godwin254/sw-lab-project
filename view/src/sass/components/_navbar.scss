@@ -1,0 +1,61 @@
+.Navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.158);
+    height: 10vh;
+    padding: 0 10rem;
+
+    display: flex;
+    align-items: center;
+
+    nav{
+        height: inherit;
+        flex: 0 0 1;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        a{
+            text-decoration: none;
+            color: #001;
+            padding: 0 2.5rem;
+            width: calc(100 / 3);
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .4s ease-in-out;
+            font-weight: 800;
+
+            &:hover{
+                background-color: rgb(53, 252, 70);
+                transition: all .4s ease-in-out;
+            }
+        }
+    }
+
+    button{
+        border: 1px solid #ccc;
+        background: none;
+        width: 200px;
+        height: 50px;
+        border-radius: 3rem;
+
+        font-size: 1rem;
+        font-weight: 800;
+        cursor: pointer;
+        transition: all .4s ease-in-out;
+
+        &:hover{
+            border: 2px solid rgb(206, 206, 206);
+            box-shadow: 1p 0 10px rgba(0, 0, 0, 0.397);
+            transition: all .4s ease-in-out;
+        }
+
+
+    }
+
+}
