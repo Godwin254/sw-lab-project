@@ -32,5 +32,3 @@ jobs:
       name: Check npm version
     - run: npm ci
       name: Install all dependencies
-    - run: npm start
-      name: Start server application
