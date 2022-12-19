@@ -1,7 +1,7 @@
 {
-  "name": "sw-lab-project",
+  "name": "mind-guard",
   "version": "1.0.0",
-  "description": "## Overview",
+  "description": "A mental health app that helps people with mental health issues to get help and also helps people to know more about mental health issues.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
@@ -10,9 +10,7 @@
     "test:client": "cd view && npm run test -a --watchAll",
     "test:server": "cross-env NODE_ENV=test jest --testTimeout 10000",
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "heroku-postbuild": "cd view && npm install && npm run build",
-    "test-build": "cd view && npm install && npm run build"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -34,7 +32,9 @@
     "express": "^4.18.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.7.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
