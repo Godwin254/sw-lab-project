@@ -41,14 +41,7 @@ function LoginPage() {
                          <a href="#">Forgot password?</a>
                          <p>Don't have an account? <a href="/signup">Sign up</a></p>
                     </div>
-                    <div className="social">
-                         <span>Sign in with: </span>
-                        
-                         <BsFacebook className="icon"/>
-                         <AiFillGoogleCircle className="icon"/>
-                        
-                         
-                    </div>
+                    
 
                </div>
           </div>
