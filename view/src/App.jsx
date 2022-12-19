@@ -6,6 +6,7 @@ import SignupPage from './pages/SignupPage';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import {Routes, Route} from 'react-router-dom';
 
 function App() {
 
@@ -17,8 +18,17 @@ function App() {
        *  <Navbar />
        * <Footer />
        */}
-
-       <HomePage />
+       <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/signup" element={<SignupPage />} />
+          {
+            /*
+            protected routes
+            */
+          }
+          
+       </Routes>
     </div>
   )
 }

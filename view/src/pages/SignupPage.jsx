@@ -3,8 +3,10 @@ import { BsFacebook, BsInfoCircleFill } from "react-icons/bs";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import loginImg from '../assets/images/loginImg.jpg'
 import background from  '../assets/images/background.jpg'
+import {useNavigate} from 'react-router-dom';
 
 function SignupPage() {
+  const navigate = useNavigate();
   return (
     <div className="SignupPage">
         <img src={background} alt="background" className="background" />
@@ -13,7 +15,7 @@ function SignupPage() {
 
           <div className='left-view'>
             <img src={loginImg} alt="logo" />
-            <button >back to home</button>
+            <button onClick={() => navigate('/')}>back to home</button>
           </div>
 
           <div className='right-view'>
@@ -31,25 +33,18 @@ function SignupPage() {
               </div>
               <div className="form-group">
                 <label htmlFor="password">Password</label>
-                <input type="password" name="password" id="password" placeholder="qw12@!QWE" />
+                <input type="password" name="password1" id="password" placeholder="qw12@!QWE" />
               </div>
               <div className="form-group">
                 <label htmlFor="password">Confirm password</label>
-                <input type="password" name="password" id="password" placeholder="qw12@!QWE" />
+                <input type="password" name="password" id="password2" placeholder="qw12@!QWE" />
               </div>
               <div className="form-group">
                 <button type="submit">Register</button>
               </div>
             </form>
             <div className="forgot-password">
-              <p>Don't have an account? <a href="#">Sign up</a></p>
-            </div>
-            <div className="social">
-              <span>Sign in with: </span>
-            
-              <BsFacebook className="icon"/>
-              <AiFillGoogleCircle className="icon"/>
-                                   
+              <p>Don't have an account? <a href="/login">Log in</a></p>
             </div>
 
           </div>

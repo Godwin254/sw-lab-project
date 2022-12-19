@@ -3,8 +3,10 @@ import { BsFacebook, BsInfoCircleFill } from "react-icons/bs";
 import { AiFillGoogleCircle } from "react-icons/ai";
 import loginImg from '../assets/images/loginImg.jpg'
 import background from  '../assets/images/background.jpg'
+import { useNavigate} from 'react-router-dom';
 
 function LoginPage() {
+     const navigate = useNavigate();
 
   return (
     <div className="LoginPage">
@@ -12,7 +14,7 @@ function LoginPage() {
           <div className="login-container">
                <div className="left-view">
                     <img src={loginImg} alt="logo" />
-                    <button >back to home</button>
+                    <button onClick={() => navigate('/')} >back to home</button>
                </div>
                <div className="right-view">
                     <h1>Welcome back, User</h1>
@@ -37,7 +39,7 @@ function LoginPage() {
                     </form>
                     <div className="forgot-password">
                          <a href="#">Forgot password?</a>
-                         <p>Don't have an account? <a href="#">Sign up</a></p>
+                         <p>Don't have an account? <a href="/signup">Sign up</a></p>
                     </div>
                     <div className="social">
                          <span>Sign in with: </span>
