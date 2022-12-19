@@ -1,11 +1,13 @@
 import React from 'react'
 import Button from './Button';
 import Logo from '../assets/images/logo.png'
+import {useNavigate} from 'react-router-dom';
 
 function Navbar() {
+  const navigate = useNavigate();
 
   const handleSignUp = () => {
-    alert("under implementation");
+    navigate('/signup');
   }
 
   return (

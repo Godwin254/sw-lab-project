@@ -11,14 +11,31 @@ const userRouter = require('./routes/userRouter');
 app.use(bodyParser.json());
 app.use(cors());
 
-//routes
-app.use('/api/posts', postRouter);
-app.use('/api/users', userRouter);
 
-//api
-app.get('/api', (req, res) => {
-    res.send('Welcome to the API');
-});
+
+//swagger configuration
+const swaggerJsDoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+
+const swaggerDefinition = {
+    openapi: '3.0.0',
+    info: {
+        title: 'MindGuard - API Documentation {SW DEV LAB}',
+        version: '1.0.0',
+    }
+}
+
+const options = {
+    swaggerDefinition,
+    apis: ['./routes/*.js'],
+};
+
+const swaggerSpec = swaggerJsDoc(options);
+//const swaggerDocs = swaggerUi.generateHTML(swaggerSpec);
+
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+app.use('/api/users', userRouter);
+app.use('/api/posts', postRouter);
 
 //serve static assets if in production
 if(process.env.NODE_ENV === 'production') {
@@ -29,7 +46,6 @@ if(process.env.NODE_ENV === 'production') {
         res.sendFile(path.resolve(__dirname, 'view', 'build', 'index.html'));
     });
 }
-/*static files
-app.use(express.static(path.join(__dirname, './view/build')));*/
+
 
 module.exports = app;
